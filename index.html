@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="devlopment.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="contact.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <title>Tushar - A Web devloper</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Skill">Skill</a></li>
+            <li><a href="#devlopment">Devlopment</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!--settingbutton
+    <div class="setting">
+        <img id="settingicon" src="image/settings.png">
+        
+    </div>
+     settingbutton end -->
+
+    <div class="fullpage">
+        <div id="Home">
+            <div class="line">
+                <div></div>
+            </div>
+
+            <div class="curveline1"></div>
+            <div class="curveline2"></div>
+            <h1 class="name" data-AOS="flip-left" data-aos-duration="1000">I AM <br><span>TUSHAR</span></h1>
+            <h2>~ A <span class="typinganimation"></span></h2>
+        </div>
+
+        <div id="About">
+            <div class="aboutheader">About Me</div>
+            <div class="line1">
+                <div></div>
+            </div>
+            <div class="content" data-AOS="fade-up" data-aos-duration="9000">
+                <div id="image"></div>
+                <div id="text">
+                    <h1 class="wai">Who Am I?</h1>
+                    <hr>
+                    <p class="ap">
+                        Hey there, Nice to see you... I'm Tushar Pankhaniya<br>
+                        I'm a frontend web developer and UI designer.<br>
+                        Currently, I am pursuing Information technology. I've started my work as a fresher.<br>
+                        Since I can remember, I've always been curious about new technology, programming.
+                        <br>
+                        Some of the fields I like to explore are Astronomy, Science Mysteries , Mythologies.
+                        </span>
+                    </p>
+                    <h2 id="follow"><span>Follow Me</span></h2>
+                    <div class="social">
+                        <ul id="socialul">
+                            <li><a href="https://www.instagram.com/tushar.p_22/"><img src="image/instagram.png"></a></li>
+                            <li><a href="https://www.facebook.com/tushar.pankhaniya.52"> <img src="image/facebook.png"></a></li>
+                            <li><a href="https://github.com/tusharpankhaniya"><img src="image/github.png"></a></li>
+                            <li><a href="https://twitter.com/tusharjp9"><img src="image/twitter.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Skill">
+            <div class="skillheader">Skills</div>
+            <div class="line2">
+                <div></div>
+            </div>
+            <!-- card -->
+            <div class="curveline3"></div>
+            <div class="curveline4"></div>
+            <div class="card">
+                <div class="photo">
+                    <div class="logo">
+                        <div class="logo1"><img src="image/htmllogo.png"></div>
+                        <div class="logo2"><img src="image/csslogo.png"></div>
+                        <div class="logo3"><img src="image/jslogo.png"></div>
+                        <div class="logo4"><img src="image/ui_ux.png"></div>
+                        <div class="logo5"><img src="image/code.png"></div>
+                        <div class="logo6"><img src="image/figma.png"></div>
+                        <div class="logo7"><img src="image/illustrator.png"></div>
+                    </div>
+                </div>
+                <h2>SKILLS</h2>
+                <div class="chart">
+                    <div class="bar bar1"><span>HTML</span></div>
+                    <div class="bar bar2"><span>CSS</span></div>
+                    <div class="bar bar3"><span>JS</span></div>
+                    <div class="bar bar4"><span>UI/UX</span></div>
+                    <div class="bar bar5"><span>C++/JAVA</span></div>
+                    <div class="bar bar6"><span>FIGMA</span></div>
+                    <div class="bar bar7"><span>ILLUSTRATOR</span></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="devlopment">
+            <div class="devlopheader">Devlopment</div>
+            <div class="line3">
+                <div></div>
+            </div>
+            <h1 id="comingsoon" data-AOS="fade-up" data-aos-duration="9000"> COMING <br>SOON!<br> </h1>
+        </div>
+
+
+        <div id="contact">
+            <div class="contactheader">Contact Me</div>
+            <div class="line4">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--====================================javascript================================-->
+
+
+    <!--JS cdn/aos link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- aos script -->
+    <script>
+        AOS.init({
+            offset: 200
+            // anchorPlacement: 'top-bottom',
+        });
+    </script>
+
+    <!-- typing animation -->
+    <script>
+        var typed = new Typed(".typinganimation", {
+            strings: ["Web Devloper", "UX/UI Designer", "Designer", "Technophile"],
+            typeSpeed: 90,
+            BackSpeed: 70,
+            loop: true
+        })
+    </script>
+
+    <!-- card js -->
+    <script>
+        let body = document.body;
+        let tilted = false;
+        let toggleTilt = function () {
+            tilted = !tilted;
+            if (tilted)
+                body.classList.add('details');
+            else
+                body.classList.remove('details');
+        };
+        body.addEventListener('click', toggleTilt);
+        body.addEventListener('touchstart', toggleTilt);
+        if (location.pathname.match(/fullcpgrid/i))
+            setTimeout(toggleTilt, 1000);
+    </script>
+
+   
+</html>
