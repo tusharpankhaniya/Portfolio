@@ -3,6 +3,12 @@
     height: 100vh;
     box-sizing: border-box;
 }
+@media only screen and (max-width:500px){
+  #Skill{
+      height: 50rem;
+      width: 600px;
+  }
+}
 .line2 div{
 display: flex;
 position: absolute;
@@ -25,7 +31,7 @@ position: absolute;
     width: 15px;
     background-color: blue;
 }
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
   .line2 div{
       
       height: 0;
@@ -59,9 +65,9 @@ position: absolute;
     font-weight: 900;
     border-bottom-right-radius: 100px;
 }
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
   .skillheader{
-      left: 35%;
+      left: 30%;
       border-radius: 100px;
       font-size:30px ;
       height: 50px;
@@ -109,7 +115,7 @@ position: absolute;
   bottom: 0px;
   border-radius: 50px;
 }
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
   .curveline3{
     height: 0;
     width: 0;
@@ -145,12 +151,15 @@ position: absolute;
     transform-style: preserve-3d;
     border: 2px solid blue;
   }
-  @media (max-width: 900px){
+  @media only screen and (max-width:500px){
     .card{
       width: 400px;
-      top: 30%;
+      top: 25%;
+      left: 15%;
     }
   }
+
+
   .logo {
     display: flex;
     position: absolute;
@@ -186,7 +195,7 @@ position: absolute;
     width: 45px;
     
   }
-  @media (max-width: 900px){
+  @media only screen and (max-width:500px){
     .logo {
       display: flex;
       position: absolute;
@@ -286,7 +295,7 @@ position: absolute;
     background: linear-gradient(to bottom, aquamarine 0%, aquamarine 0%, aquamarine 100%);
     z-index: 2;
   }
-  @media (max-width: 900px){
+  @media only screen and (max-width:500px){
     .card .bar{
       margin: 12px;
       width: 25px;
@@ -343,7 +352,7 @@ position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
-  @media (max-width: 900px){
+  @media only screen and (max-width:500px){
     .card .bar span {
       font-size:0px ;
     }
