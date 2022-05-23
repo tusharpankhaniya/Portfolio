@@ -5,7 +5,12 @@
     height: 100vh;
     box-sizing: border-box;
 }
-
+@media only screen and (max-width:500px){
+    #About{
+        height: 50rem;
+        width: 600px;
+    }
+}
 .line1 div{
     display: flex;
     position: absolute;
@@ -28,7 +33,7 @@
     width: 15px;
     background-color: blue;
 }
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
     .line1 div{
         
         height: 0;
@@ -62,14 +67,15 @@
     font-weight: 900;
     border-bottom-left-radius: 100px;
 }
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
     .aboutheader{
-        right: 35%;
+        right: 30%;
         border-radius: 100px;
         font-size:30px ;
         height: 50px;
     }
 }
+
 .content{
     display: flex;
     justify-content: center;
@@ -77,10 +83,10 @@
   
 }
 
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
     .content{
-      display:grid;
-      top:180px;
+      display:contents;
+      top: 0px;
     }  
 }
 
@@ -131,22 +137,28 @@ hr{
     padding: 20px;
     line-height: 2;
 }
-@media (max-width: 800px){
+@media only screen and (max-width:500px){
     #image{
-        height: 300px;
-        width: 300px;
-        left: 70px;
+        height: 200px;
+        width: 200px;
+        left: 100px;
+        top: 15%;
     }
     #text{
         text-align: center;
-        height: 400px;
+        height: 800px;
         width: 600px;
-        margin:0 20px;
+        margin:150px 0 1px 0px;
+    
     }
     hr{
         left: 0;
         width: 0;
         top: 0;
+    }
+    .ap{
+        line-height: 1.5;
+        font-weight: 0;
     }
 }
 #follow{
@@ -171,11 +183,7 @@ hr{
     left: 36vh;
     margin: 20px 0;
 }
- @media (max-width: 900px){
-    .social{
-        left: 15vh;
-    }      
- }
+
 #socialul{
     display: flex;
     
@@ -189,3 +197,17 @@ hr{
     margin: 10px;
     
 }
+@media only screen and (max-width:500px){
+    .social{
+        left: 32vh;
+        top: 42%;
+    }   
+    .social #socialul img{
+        height: 20px;
+    }   
+    .social #socialul li{
+        list-style: none;
+        margin: 5px;
+        
+    }
+ }
