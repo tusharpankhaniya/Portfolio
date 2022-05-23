@@ -3,6 +3,12 @@
     height: 100vh;
     box-sizing: border-box;
 }
+@media only screen and (max-width:500px){
+    #contact{
+        height: 50rem;
+        width: 600px;
+    }
+}
 .line4 div{
     display: flex;
     position: absolute;
@@ -25,7 +31,7 @@
         width: 15px;
         background-color: blue;
     }
-@media (max-width: 800px){
+    @media only screen and (max-width:500px){
         .line4 div{
             
             height: 0;
@@ -59,7 +65,7 @@
         font-weight: 900;
         border-bottom-right-radius: 100px;
     }
-    @media (max-width: 900px){
+    @media only screen and (max-width:500px){
         .contactheader{
             left: 35%;
             border-radius: 100px;
