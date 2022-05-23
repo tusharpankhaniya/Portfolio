@@ -29,7 +29,12 @@ html::-webkit-scrollbar-thumb{
     box-sizing: border-box;
     
 }
-
+@media only screen and (max-width:500px){
+    #Home{
+        height: 50rem;
+        width: 600px;
+    }
+}
 nav{
     position: fixed;
     bottom: 30px;
@@ -91,33 +96,38 @@ nav ul li a:hover {
     background-color: #081234;
   }
 
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
     nav{
-        display: inline;
-        bottom: 0px;
-        left: 0px;
-        top: 0px;
+        left: 0%;
+        
     }
     
     nav::before{
-        width: 0px;
-        left: 0%;
+        width: 100%;
+        left: 10%;
     }
     nav::after{
-        width: 0px;
-        left: 0%;
+        width: 100%;
+        left: 10%;
     }
+  
+    nav ul{
+        border-radius: 0;
+        padding: 0px 40px 0px 40px;
+        background: #134eb5;
+        left: 50px;
+    }  
     nav ul li{
-        background-color: #071124;
+        background-color: #134eb5;
+        
     }
     nav ul li a{
-        padding: 0px 0px;
-        color:#071124;
-        border-radius: 0px;
+        padding: 10px 10px;
         margin: 0px;
-        font-weight: 0;
+        font-weight: 20;
         letter-spacing: 0px;
         font-family: 'DM Serif Text', serif;
+        color: rgb(255, 251, 0);
     }
     nav ul li a:hover {
         background-color:'';
@@ -146,16 +156,16 @@ nav ul li a:hover {
     font-family: 'Merriweather', serif;
 }
 
-@media (max-width: 900px){
+@media only screen and (max-width:500px) {
     #Home .name{
         top: 30%;
         font-size: 80px;
-        right: 50px;
+        right: 5px;
     }
     #Home h2{
         
         top:30%;
-        right: 50px;
+        right: 5px;
         color:rgb(255, 238, 0);
         
     }
@@ -184,7 +194,7 @@ nav ul li a:hover {
     width: 15px;
     background-color: blue;
 }
-@media (max-width: 900px){
+@media only screen and (max-width:500px){
     .line div{
         height: 0;
         width: 0;
@@ -244,14 +254,14 @@ nav ul li a:hover {
     border-radius: 50px;
   }
 
-  @media (max-width: 900px) {
+  @media only screen and (max-width:500px) {
     .curveline1{
-        left: 60px;
-        top: 20%;
+        left: 30px;
+        top: 15%;
     }
     .curveline2{
-         right: 20%;
-         bottom: 40%;
+         right: 35px;
+         bottom: 30%;
     }
 }
 /* ===========setting switch====== */
@@ -278,4 +288,6 @@ nav ul li a:hover {
         transform: rotate(-180deg);
     }
 }
+
+
 
