@@ -46,10 +46,14 @@ body.whitetheme #Home{
     }
 }
 
+.navcontainer{
+    display: flex;
+    justify-content: center;
+}
+
 nav{
     position: fixed;
     bottom: 30px;
-    left: 28em;
     z-index: 1000;
 }
 
