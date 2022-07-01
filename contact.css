@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 #contact{
-    /* background-color: rgb(14, 14, 14); */
-    background-image: url(image/lambobg.jpg);
-    background-size: cover;
+    /* background-color: rgb(14, 14, 14); */ 
+    /* background-image: url(image/lambobg.jpg); 
+    background-size: cover;*/ 
     background-attachment: fixed;
     height: 100vh;
     box-sizing: border-box;
 }
-body.whitetheme #contact{
-    background-color: #132130;
+/* bg video */
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -6;
+    
 }
+
+.bg video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.bg .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+    background-color:black;
+    opacity: .6;
+
+}
+
 @media only screen and (max-width:500px){
     #contact{
         height: 50rem;
@@ -105,6 +135,7 @@ body.whitetheme .contactheader{
     padding:0 60px;
     align-items: center;
     min-height: 90vh;
+    z-index: 6;
 }
 .contactus{
     width: 70%;
@@ -233,4 +264,9 @@ button[type="submit"]
     background: #08d8fd;
     font-size: 18px;
     border-radius: 2px;
+}
+
+
+@media only screen and (max-width:500px){
+
 }
